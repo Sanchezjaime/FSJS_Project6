@@ -2,11 +2,11 @@
   "projects": [
     {
       "id": "0",
-      "project_name": " ",
-      "description": " ",
-      "technologies": "[]",
+      "project_name": "list_pagination",
+      "description": "List pagination and filtering",
+      "technologies": "[JavaScript, html, css]",
       "live_link": " ",
-      "github_link": " ",
+      "github_link": " github.com/Sanchezjaime/list_pagination ",
       "image_urls": "[]"
     },
     {
