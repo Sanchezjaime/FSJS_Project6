@@ -6,19 +6,26 @@ const { projects } = require('../data/data.json');
 
 //routes
 //index route
-router.get('/', (req, res) => {
-  res.render('index');
+router.get('/', function(req, res, next) {
+  //Passes projects data to index template
+  res.render('index', {projects});
 });
 
+//projects Page
+router.get('/project?/:id', function(req, res, next) {
+  const projectId = req.params.id;
+  const project = projects.find( ({ id }) => id === +projectId);
+  if (project) {
+    //Passes project data to the project template
+    res.render('project', { projects });
+  } else {
+    res.sendStatus(404);
+  }
+});
 
 //about route
 router.get('/about', (req, res) => {
   res.render('about');
-})
-
-//projects Page
-router.get('/project', (req, res) => {
-  res.render('project');
 })
 
 
