@@ -6,18 +6,17 @@ const { projects } = require('../data/data.json');
 
 //routes
 //index route
-router.get('/', function(req, res, next) {
+router.get('/', (req, res) => {
   //Passes projects data to index template
-  res.render('index', {projects});
+  res.render('index', { projects });
 });
 
 //projects Page
-router.get('/project?/:id', function(req, res, next) {
+router.get('/project/:id', (req, res) => {
   const projectId = req.params.id;
-  const project = projects.find( ({ id }) => id === +projectId);
+  const project = projects.find( ({ id }) => id === +projectId );
   if (project) {
-    //Passes project data to the project template
-    res.render('project', { projects });
+    res.render('project', { project });
   } else {
     res.sendStatus(404);
   }
@@ -28,5 +27,5 @@ router.get('/about', (req, res) => {
   res.render('about');
 })
 
-
+//export module
 module.exports = router;
