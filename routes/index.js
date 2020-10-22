@@ -13,14 +13,18 @@ router.get('/', (req, res) => {
 
 //projects Page
 router.get('/project/:id', (req, res) => {
-  const projectId = req.params.id;
-  const project = projects.find( ({ id }) => id === +projectId );
+  let projectId = req.params.id;
+  let project = projects.find( ({ id }) => id === parseInt(projectId) );
+  console.log(project);
+  console.log(project.technologies);
   if (project) {
     res.render('project', { project });
   } else {
+    console.log('something is wrong');
     res.sendStatus(404);
   }
 });
+
 
 //about route
 router.get('/about', (req, res) => {
