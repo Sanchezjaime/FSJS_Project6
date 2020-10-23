@@ -7,7 +7,7 @@
       "technologies": ["JavaScript", "HTML", "CSS"],
       "live_link": "https://sanchezjaime.github.io/list_pagination/",
       "github_link": "https://github.com/Sanchezjaime/list_pagination",
-      "image_urls": ["/images/list_pagination1.png", "/images/list_pagination2.png"]
+      "image_urls": ["/static/images/list_pagination_thumb.png", "/static/images/list_pagination1.png", "/static/images/list_pagination2.png"]
     },
     {
       "id": 1,
@@ -16,7 +16,7 @@
       "technologies": ["JavaScript", "HTML", "CSS", "AJAX", "Fetch API"],
       "live_link": "https://sanchezjaime.github.io/public_api_request-v1/",
       "github_link": "https://github.com/Sanchezjaime/public_api_request-v1",
-      "image_urls": ["/images/public_api1.png", "/images/public_api2.png"]
+      "image_urls": ["/static/images/public_apiThumb.png", "/static/images/public_api1.png", "/static/images/public_api2.png"]
     },
     {
       "id": 2,
@@ -25,7 +25,7 @@
       "technologies": ["JavaScript", "HTML", "CSS"],
       "live_link": "https://sanchezjaime.github.io/oop_game-v2/",
       "github_link": "https://github.com/Sanchezjaime/oop_game-v2",
-      "image_urls": ["/images/phrase_hunter1.png", "/images/phrase_hunter2.png"]
+      "image_urls": ["/static/images/phrase_hunter_thumb.png", "/static/images/phrase_hunter1.png", "/static/images/phrase_hunter2.png"]
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "technologies": ["JavaScript", "HTML", "CSS"],
       "live_link": "https://sanchezjaime.github.io/interactive_form/",
       "github_link": "https://github.com/Sanchezjaime/interactive_form",
-      "image_urls": ["/images/interactive_form1.png", "/images/interactive_form2.png"]
+      "image_urls": ["/static/images/interactive_form_thumb.png", "/static/images/interactive_form1.png", "/static/images/interactive_form2.png"]
     },
     {
       "id": 4,
@@ -43,7 +43,7 @@
       "technologies": ["JavaScript", "HTML", "CSS"],
       "live_link": "https://sanchezjaime.github.io/random-quote-generator/",
       "github_link": "https://github.com/Sanchezjaime/random-quote-generator",
-      "image_urls": ["/images/random_quote_generator1.png", "/images/random_quote_generator2.png"]
+      "image_urls": ["/static/images/random_quote_thumb.png", "/static/images/random_quote_genarator1.png", "/static/images/random_quote_genarator2.png"]
     },
     {
       "id": 5,
@@ -52,7 +52,7 @@
       "technologies": ["JavaScript", "HTML", "CSS"],
       "live_link": "https://sanchezjaime.github.io/jaime-memory-game3/",
       "github_link": "https://github.com/Sanchezjaime/jaime-memory-game3",
-      "image_urls": ["/images/matching_game1.png", "/images/matching_game2.png"]
+      "image_urls": ["/static/images/matching_game_thumb.png", "/static/images/matching_game1.png", "/static/images/matching_game2.png"]
     }
   ]
 }
