@@ -12,16 +12,17 @@ router.get('/', (req, res) => {
 });
 
 //projects Page
-router.get('/project/:id', (req, res) => {
+router.get('/project/:id', (req, res, next) => {
   let projectId = req.params.id;
   let project = projects.find( ({ id }) => id === parseInt(projectId) );
   console.log(project);
-  console.log(project.technologies);
   if (project) {
     res.render('project', { project });
   } else {
-    console.log('something is wrong');
-    res.sendStatus(404);
+    const err = new Error();
+    err.status = 404;
+    err.message = 'That project does not exist!'
+    next(err);
   }
 });
 
